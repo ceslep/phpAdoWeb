@@ -7,11 +7,7 @@
             $datos=json_decode(file_get_contents("php://input"));
 			$enlace =  mysql_connect($host, $user, $pass);
 			
-			if (isset($_REQUEST['fecha'])){
-				$fecha=$_REQUEST['fecha'];
-				if ($fecha==="undefined") unset($fecha);
-				
-			}	
+			
 			mysql_select_db($datos->database,$enlace);
 			$sql="select identificacion,nombresp as nombres from hoja_vida where activo='S' and tipo='Ortodoncista' order by nombres";
 			

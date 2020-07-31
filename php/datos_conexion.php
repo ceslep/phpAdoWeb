@@ -8,7 +8,7 @@
 		*/	
 			$host="localhost";
             $user="root";
-		  	$pass="894035";
+		  	$pass="9695141";
 		  	//$database="ado"; 
 			$database_imagenes="ado_fotos"; 
 			//$tipo="ORTODONCIA";
